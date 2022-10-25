@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+  font-family: "Roboto", sans-serif;
+}
 body {
   background-color: #393E46;
 }
@@ -5,7 +9,6 @@ body {
 p {
   font-size: 2.5rem;
   color: #4ECCA3;
-  font-family: 'Indie Flower', cursive;
 }
 
 img {
@@ -16,8 +19,6 @@ footer {
   margin-top: 5%;
   color: #EEEEEE;
   text-align: center;
-  font-family: 'Indie Flower', cursive;
-
 }
 
 .container {
@@ -29,11 +30,26 @@ footer {
 
 .header {
   margin: 30px auto 0;
-  font-family: 'Lobster', cursive;
   text-shadow: 5px 0 #232931;
   font-size: 6rem;
   line-height: 1.25;
   color: #4ECCA3;
+}
+
+.play-again {
+  visibility: hidden;
+  opacity: 0;
+  max-height: 0; 
+  overflow: hidden;
+  color: white;
+  transition: all 750ms ease;
+  font-size: 1.5rem;
+}
+
+.play-again.play-again--show {
+  visibility: visible;
+  opacity: 1;
+  max-height: 1000px;
 }
 
 .emoji {
